@@ -190,6 +190,33 @@ The following language servers, linters, formatters, and debug adapters are auto
 
 ---
 
+# 🗑️ Uninstallation
+
+If you ever wish to remove this configuration or completely wipe Neovim and all installed plugins from your system, you can run the automated uninstaller:
+
+### 1. One-Command Remote Uninstallation:
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/prodip-shadow/nvim/main/uninstall.sh)
+```
+
+### 2. Local Uninstallation (if repository is cloned):
+```bash
+bash ~/.config/nvim/uninstall.sh
+```
+
+### ⚙️ Uninstallation Modes:
+- **Interactive Mode** (Default): Prompts you before deleting configuration, plugins, cache, and asks if you also want to remove the Neovim executable package.
+- **Complete Wipe (Config + Plugins + Cache + Neovim executable)**:
+  ```bash
+  bash <(curl -fsSL https://raw.githubusercontent.com/prodip-shadow/nvim/main/uninstall.sh) --all
+  ```
+- **Configuration & Plugins Only (Keeps Neovim executable)**:
+  ```bash
+  bash <(curl -fsSL https://raw.githubusercontent.com/prodip-shadow/nvim/main/uninstall.sh) --config
+  ```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -197,6 +224,7 @@ The following language servers, linters, formatters, and debug adapters are auto
 ├── init.lua                   # Entry point & Lazy.nvim bootstrap
 ├── lazy-lock.json             # Pinned plugin lockfile
 ├── install.sh                 # Cross-distribution automated installer script
+├── uninstall.sh               # Cross-distribution automated uninstaller script
 ├── lua/
 │   ├── core/
 │   │   ├── options.lua        # Editor options & vim settings
@@ -226,3 +254,4 @@ The following language servers, linters, formatters, and debug adapters are auto
 ## 📄 License
 
 This configuration is open-source and released under the [MIT License](LICENSE).
+
