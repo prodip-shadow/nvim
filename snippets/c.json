@@ -1,0 +1,29 @@
+{
+  "Basic C Main": {
+    "prefix": "cmain",
+    "body": [
+      "#include <stdio.h>",
+      "#include <stdlib.h>",
+      "",
+      "int main(int argc, char *argv[]) {",
+      "    $0",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Standard C main function boilerplate"
+  },
+  "Printf": {
+    "prefix": "printf",
+    "body": [
+      "printf(\"${1:%s}\\n\"${2:, var});$0"
+    ],
+    "description": "Print formatted string"
+  },
+  "Scanf": {
+    "prefix": "scanf",
+    "body": [
+      "scanf(\"${1:%d}\", &${2:var});$0"
+    ],
+    "description": "Scan formatted input"
+  }
+}

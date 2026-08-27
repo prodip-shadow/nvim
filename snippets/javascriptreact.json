@@ -1,0 +1,91 @@
+{
+  "React Stateless Component": {
+    "prefix": "rsc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React Stateless Function Component"
+  },
+  "React Arrow Function Component With Export": {
+    "prefix": "rafce",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system"
+  },
+  "React Function Component With Export": {
+    "prefix": "rfce",
+    "body": [
+      "import React from 'react';",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React Function Component with ES7 module system"
+  },
+  "React Function Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "Creates a React Function Component"
+  },
+  "React UseState Hook": {
+    "prefix": "useS",
+    "body": [
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialState});"
+    ],
+    "description": "React useState hook"
+  },
+  "React UseEffect Hook": {
+    "prefix": "useE",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [${2:dependencies}]);"
+    ],
+    "description": "React useEffect hook"
+  },
+  "Console Log": {
+    "prefix": "clg",
+    "body": [
+      "console.log(${1:object});"
+    ],
+    "description": "Log output to console"
+  }
+}
